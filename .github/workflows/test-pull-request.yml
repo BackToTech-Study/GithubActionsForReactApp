@@ -26,4 +26,4 @@ jobs:
         working-directory: ./app-to-test 
         run: |
           npm install
-          npm start 
+          npm start & sleep 10
