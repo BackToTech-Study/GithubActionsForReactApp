@@ -25,4 +25,5 @@ jobs:
       - name: Execute test cases
         working-directory: ./app-to-test 
         run: |
+          npm install
           npm start 
