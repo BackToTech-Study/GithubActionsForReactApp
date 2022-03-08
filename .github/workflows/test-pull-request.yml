@@ -27,8 +27,13 @@ jobs:
           eval "$(ssh-agent -s)"
           ssh-add - <<< "${{ secrets.SMOKE_TEST_KEY }}"
           git clone git@github.com:BackToTech-Study/TestsForDefaultReactApp.git
-      - name: Execute test cases
+      - name: Start app
         working-directory: ./app-to-test 
         run: |
           npm install
           npm start & sleep 10
+      - name: Run test cases
+        working-directory: ./TestsForDefaultReactApp 
+        run: |
+          npm install
+          npx cypress run        
