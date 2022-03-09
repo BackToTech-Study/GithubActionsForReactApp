@@ -15,12 +15,14 @@ Automated test execution and integration for a react app
 - [x] execute multiple commands in sequence
 
 ## Define cypress test action
-- [ ] Clone the external repository
-- [ ] Execute cypress test cases
+- [ ] For pulling private a repo setup a [deployment key](https://docs.github.com/en/developers/overview/managing-deploy-keys#deploy-keys). This allows you to use credentials for a single repository rather than your personal access token which exposes all your repositories.
+- [x] Protecting [secrets](https://docs.github.com/en/actions/security-guides/encrypted-secrets) needed in github actions
+- [x] [Clone the external repository](https://github.com/actions/checkout#checkout-multiple-repos-side-by-side)
+- [x] Execute cypress test cases
+
 
 ## Deploy to netlify
-- [ ] Define secrets to use
-- [ ] Deploy
+- [ ] 
 
 
 # Merge pull request conditions and automations
