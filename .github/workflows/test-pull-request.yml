@@ -36,4 +36,4 @@ jobs:
         working-directory: ./TestsForDefaultReactApp 
         run: |
           npm install
-          npx cypress run        
+          npx cypress run 
